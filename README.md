@@ -1,1 +1,1 @@
-# manufacturing-analytics-portfolio
+# Manufacturing Analytics Portfolio
