@@ -1,0 +1,10 @@
+order_id,work_center,due_week,quantity,setup_hours,run_hours_per_unit,is_late
+SO-1001,CUT,1,18,2.0,1.8,true
+SO-1002,CUT,1,12,1.5,1.2,false
+SO-1003,POLISH,1,8,3.0,3.9,false
+SO-1004,COAT,2,22,4.0,1.5,false
+SO-1005,POLISH,2,14,2.5,2.8,false
+SO-1006,CUT,3,30,2.0,1.1,false
+SO-1007,COAT,3,16,3.5,2.2,false
+SO-1008,POLISH,4,10,2.0,4.1,false
+
