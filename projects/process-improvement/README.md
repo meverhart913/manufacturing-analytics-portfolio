@@ -2,7 +2,7 @@
 
 ## Executive summary
 
-Across six years in a dedicated Lean/continuous-improvement role, I led and facilitated manufacturing improvements that addressed quality defects, equipment utilization, operator motion, material flow, and facility layout. The common pattern was to turn a shop-floor problem into a measurable baseline, quantify the economic or operating effect, implement the change with production stakeholders, and verify the result after the process changed.
+Across six years in a dedicated Lean/continuous-improvement role, I led and facilitated manufacturing improvements that addressed quality defects, equipment utilization, operator motion, material flow, and facility layout. The documented work connects shop-floor problems to operational analysis, implemented changes, and annualized savings. The narrative below distinguishes those career-record outcomes from original project measurements that are not published here.
 
 This case study combines several completed projects because together they show the capability more clearly than a collection of isolated Lean-event summaries.
 
@@ -21,13 +21,13 @@ The work was performed in large industrial-motor manufacturing and included hand
 My responsibilities included:
 
 - Leading a Six Sigma Green Belt improvement project
-- Collecting and analyzing process data
+- Analyzing operational losses and component usage
 - Building cost/benefit cases for improvement opportunities
 - Facilitating recurring Lean and Kaizen events
 - Working with operators, manufacturing leadership, quality, engineering, and material functions
 - Designing or supporting revised material-flow and point-of-use approaches
 - Supporting manufacturing-layout implementation using Lean Flex Flow principles
-- Verifying that changes addressed the original constraint rather than merely moving the problem elsewhere
+- Connecting documented project results to the targeted operational loss
 
 ## Data and constraints
 
@@ -55,7 +55,7 @@ Examples included point-of-use material staging, batch/loading changes, defect-r
 
 ### 5. Validate after implementation
 
-Results were compared with the original baseline to confirm that the change actually reduced the targeted loss.
+The career record documents project outcomes. Original baseline worksheets, financial approvals, statistical analyses, and long-term sustainment records were not available in the reviewed source set; no independently verified control-phase result is claimed here.
 
 ## Domain reasoning
 
@@ -67,7 +67,7 @@ These projects required manufacturing judgment beyond generic data analysis:
 - Quality improvement has to address both internal rework and downstream product risk.
 - Layout changes must consider material flow, operator motion, work sequence, safety, and the interactions between work centers.
 
-## Solutions and completed results
+## Solution
 
 ### Six Sigma defect-reduction project
 
@@ -89,12 +89,11 @@ Facilitated recurring events covering 5S, one-piece flow, point-of-use tooling/m
 
 Supported layout and implementation of a secondary manufacturing facility using Lean Flex Flow principles, applying flow and waste-reduction thinking at the system level rather than only within an individual workstation.
 
-## Technology and methods
+## Technology
 
 - Lean manufacturing
-- Six Sigma / DMAIC concepts
+- Six Sigma Green Belt project work
 - Root-cause analysis
-- Excel-based analysis
 - Cost/benefit analysis
 - Process observation and measurement
 - Material-flow analysis
@@ -106,16 +105,26 @@ Supported layout and implementation of a secondary manufacturing facility using 
 
 The original plant layouts, production records, cost worksheets, and process documentation are employer-owned and are not reproduced here.
 
-A safe portfolio visual for this case study should be recreated from synthetic information and show the transferable pattern:
+This generalized decision map shows the improvement approach; it does not reproduce a plant process or original project record:
 
 ```mermaid
-flowchart LR
-    A[Observe operational loss] --> B[Establish baseline]
-    B --> C[Find constraint / root cause]
-    C --> D[Quantify business case]
-    D --> E[Implement with production]
-    E --> F[Verify sustained result]
+flowchart TD
+    A[Operational loss] --> B[Quality and rework]
+    A --> C[Equipment utilization]
+    A --> D[Motion and flow]
+    B --> E[Targeted process change]
+    C --> E
+    D --> E
+    E --> F[Documented result]
 ```
+
+## Implementation
+
+Implemented work included revised point-of-use hardware supply and batch/loading changes. Regular Kaizen facilitation and support for a facility layout connected improvement work with the people executing production. Detailed rollout dates and sustainment logs are not present in the reviewed career record.
+
+## Results
+
+Career documentation records annualized savings for the defect-reduction, utilization, and staging projects, together with reduced rework, cycle time, and travel. Exact figures remain private. No combined savings total, confidence interval, or verified long-term sustainment claim is inferred.
 
 ## What this demonstrates
 
@@ -135,11 +144,13 @@ flowchart LR
 - Redesigned point-of-use hardware staging to reduce operator travel and assembly cycle time while improving repeatability of material presentation.
 - Facilitated recurring Kaizen events and supported a secondary manufacturing-facility layout using Lean Flex Flow principles.
 
-## STAR interview source
+## STAR interview story
 
 **Situation:** Multiple manufacturing processes contained recurring losses in quality, motion, utilization, and flow.  
 **Task:** Identify high-value constraints, build defensible business cases, and implement changes that production teams could sustain.  
 **Action:** Established baselines, analyzed the governing process conditions, quantified the cost/opportunity, worked cross-functionally with the people performing and supporting the work, and implemented changes to the physical or operating process.  
-**Result:** Reduced rework, improved equipment utilization, shortened assembly work, reduced operator motion, and delivered multiple projects with documented annualized savings.
+**Result:** Career records document reduced rework, improved utilization, shorter assembly work, reduced travel, and annualized savings.
 
 > Exact historical savings and internal operating figures are retained in the private career evidence record and are not published here unless disclosure is explicitly approved.
+
+[Portfolio home](../../README.md)

@@ -1,32 +1,23 @@
 # Backlog & Capacity Planner
 
-## Problem
+**Runnable synthetic portfolio model; employer deployment not established.**
 
-Production teams need a fast answer to whether the next eight weeks of demand fit available work-center hours and how much overtime would change the risk.
+## Problem and contribution
 
-## Solution
+A planner needs to compare required work with available work-center hours and examine the effect of overtime. This repository contains an independently written Python demonstration of that analytical pattern.
 
-A scenario model that calculates required hours as:
+## Approach
 
-```text
-required hours = setup hours + quantity × run hours per unit
-```
+Required hours are setup hours plus quantity multiplied by run hours per unit. Demand is grouped by due week and work center, then compared with regular capacity and two illustrative overtime scenarios.
 
-It groups work by due week and work center, then compares demand against regular time, regular time plus five overtime hours, and regular time plus ten overtime hours.
+## Domain reasoning
 
-## Outputs
+Aggregate hours identify a potential constraint. They do not prove a feasible sequence or promise a shipment date. Material availability, labor skills, maintenance, precedence, and shared resources are outside this example.
 
-- Required and available hours by work center/week
-- Overload hours and utilization
-- Late-order count
-- Weeks of backlog
-- Scenario comparison for overtime decisions
+## Outputs and limits
 
-## Scope boundary
+Required/available hours, overload, utilization, and counts of orders **already flagged late in the input**. Overtime does not predict new completion dates. Missing capacity is an error; zero capacity has undefined utilization. The model does not calculate weeks of backlog or perform finite scheduling.
 
-This is a tactical capacity model. It is not an ERP/MRP replacement, BOM or routing manager, inventory-allocation engine, or finite scheduler.
+[Run the synthetic demo and inspect its output](../../demo/capacity_planner/README.md). All inputs and results are fictional, with no relationship to employer values. This is technical proof, not a new historical career accomplishment.
 
-## Demonstration
-
-A runnable fictional example is available in [`demo/capacity_planner`](../../demo/capacity_planner/README.md). The demo uses only Python's standard library and includes unit tests.
-
+[Portfolio home](../../README.md)

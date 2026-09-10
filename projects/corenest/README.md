@@ -1,26 +1,21 @@
 # Geometry Nesting Application
 
-## Portfolio-safe overview
+**Pre-release development; repository README says existing local source has not yet been imported.**
 
-This active C#/.NET 8 WPF project converts measured 2D geometry into operator-reviewable placement recommendations. The public description is intentionally limited because the production rules and source drawings are employer-owned.
+## Problem
 
-## Transferable technical work
+Measured geometry must be translated into feasible placement recommendations without overstating achievable output.
 
-- Parse and normalize vector geometry from an interchange file.
-- Separate geometry, business rules, optimization, and presentation layers.
-- Apply configurable boundary, exclusion, clearance, and orientation constraints.
-- Visualize source geometry and recommendations in a desktop interface.
-- Distinguish warnings that require review from invalid layouts that must stop.
-- Package the Windows application for users without a development environment.
+## Contribution and approach
 
-```mermaid
-flowchart LR
-    A[Vector geometry] --> B[Normalized model]
-    B --> C[Constraint engine]
-    C --> D[WPF review interface]
-```
+The repository documents requirements for geometry import, constraint handling, reviewable placements, and coordinate exports. The stated technology direction is C#/.NET/WPF. This portfolio credits requirements and validation planning; it does not claim a complete deployed optimizer.
 
-## Status
+## Domain judgment
 
-Active development. No production drawings, dimensional rules, material specifications, source code, or internal data are published here.
+A visually plausible layout is insufficient. Boundary constraints, exclusions, units, origin, and export consistency can make a recommendation unusable even when an optimizer reports success. Correctness and operator validation are release gates.
 
+## Result
+
+Pre-release planning and design evidence. Local implementation scope and acceptance need verification before stronger claims. Production drawings, measurements, settings, and source are not reproduced.
+
+[Portfolio home](../../README.md)

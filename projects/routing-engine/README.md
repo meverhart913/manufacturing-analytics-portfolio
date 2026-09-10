@@ -1,26 +1,23 @@
-# Manufacturing Routing Recommendation Engine
+# Manufacturing Routing Decision Support
 
-## Portfolio-safe overview
+**Data foundation complete; classification in progress; similarity and recommendations planned.**
 
-This prototype helps an analyst find relevant historical process plans when reviewing a new or unusual manufactured item. It presents comparisons for human review rather than automatically declaring a route correct.
+## Problem
 
-## Transferable technical work
+Historical process plans contain inconsistent identifiers and changing practices. Selecting a superficially similar item can propagate an obsolete or incompatible process.
 
-- Join a large item history with structured attributes and ordered process steps.
-- Normalize inconsistent historical records before comparison.
-- Rank potentially comparable items using several available attributes.
-- Expose important differences alongside every recommendation.
-- Distinguish standard history from exceptional or corrective history before measuring effectiveness.
-- Validate recommendations with subject-matter experts before operational use.
+## Contribution and approach
 
-```mermaid
-flowchart LR
-    A[Historical records] --> B[Normalized features]
-    B --> C[Similarity ranking]
-    C --> D[Analyst review]
-```
+Prepared SQL extractions and a Power Query analytical model joining item attributes with historical routing information. Source documentation records identifier cleanup, duplicate elimination, validation, and a one-row-per-item view. Manufacturing classification is being developed before similarity scoring.
 
-## Status
+## Domain judgment
 
-Working prototype. The public repository excludes operation sequences, part attributes, routing logic, source queries, item identifiers, and internal performance results.
+Classify process compatibility before comparing historical items. A frequent route is not automatically the correct route, and exceptions need context before being treated as best practice. Recommendations must remain explainable and subject to engineering review.
 
+## Result and boundary
+
+The prepared data foundation is the completed artifact. Similarity ranking, confidence scores, recommendation generation, and the review dashboard are planned, not deployed. No routing-time reduction is claimed.
+
+**Technical evidence:** SQL and Power Query. Python similarity libraries are planned; they are not counted as implemented evidence here. Internal routing sequences, dimensions, thresholds, and data volumes are excluded.
+
+[Portfolio home](../../README.md)

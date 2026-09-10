@@ -1,41 +1,35 @@
 # Complete Project Catalog
 
-This catalog records the broader manufacturing project portfolio. Closely related ideas are grouped under the strongest product instead of being presented as separate finished applications.
+Five featured case studies are supported by seven additional entries. Related automation and ERP work are consolidated.
 
-## Featured work
+| Project | Maturity | Evidence | Limit |
+|---|---|---|---|
+| [Manufacturing process improvements](../projects/process-improvement/README.md) | Completed historical work | Documented savings, flow and quality outcomes | Original financial records/disclosure not supplied |
+| [Supply-chain resilience](../projects/supply-chain-resilience/README.md) | Completed historical work | Documented sourcing and continuity outcomes | Exact metrics private |
+| [Production document automation](../projects/bonded-rod-automation/README.md) | Implemented workflow documented | Less manual effort; consistent reporting | Deployment date and formal acceptance not supplied |
+| [Inventory decision support](../projects/cr4-inventory/README.md) | Working dashboard / validation | Queries, classifications, result presentation | Upstream qualification and wider accuracy checks pending |
+| [Manufacturing Price Explorer](../projects/price-explorer/README.md) | Active development | Desktop source, cache, charts, exports | Repeated Windows search-to-chart acceptance pending |
+| [Routing decision support](../projects/routing-engine/README.md) | Foundation complete; classification active | SQL / Power Query preparation | Similarity and recommendations planned |
+| [ERP validation / planning automation](../projects/erp-validation/README.md) | Support work documented | ERP support and historical SAP/VBA automation | Migration completion not verified |
+| [Capacity scenario model](../projects/capacity-planner/README.md) | Synthetic demonstration | Runnable Python and tests | No employer deployment or savings established |
+| [Geometry nesting](../projects/corenest/README.md) | Pre-release / design evidence | Requirements and validation plan | README says local source import pending |
+| [Sales Order WIP Rebalancer](../projects/wip-rebalancer/README.md) | Proposed MVP | Requirements and review boundaries | No deployed tool |
+| [Report factory / VBA utilities](../projects/report-factory/README.md) | In progress / supporting evidence | Automation design and troubleshooting | No report-factory deployment proven |
+| [Future supply requirements](../projects/growth-requirements/README.md) | Concept; implementation unverified | Supply-demand/yield framing | Existing portfolio is the only reviewed description |
 
-| Project | Stage | Portfolio treatment |
+## Preserved backlog and unverified legacy entries
+
+| Existing entry | Disposition | Why |
 |---|---|---|
-| Geometry Nesting Application | Active development | Full case study |
-| Manufacturing Price Explorer / Pricing Encyclopedia v2 | Active development | Full case study |
-| Specialty Material Inventory Decision Support | Working tool | Full case study |
-| Manufacturing Routing Recommendation Engine | Working prototype | Full case study |
-| Backlog & Capacity Planner | Working model | Full case study and runnable demo |
-| Production Document Automation | Deployed workflow | Full case study |
-| Automated Excel Report Factory | Reusable pattern | Full case study |
-| Growth Requirements Analysis | In development | Full case study |
-| Lean Six Sigma and capacity improvements | Completed work | Combined impact case study |
+| Quick Price Model / standalone standard-pricing expansion | Consolidate conceptually under Price Explorer; no standalone accomplishment claimed | Avoid duplicate pricing products; source verification incomplete |
+| Production Order Allocation Engine | Cross-reference WIP Rebalancer design; exact equivalence unverified | Similar intent does not establish the same implementation |
+| Multi-stage Material Project Tracker | Unverified legacy entry | Existing catalog label alone is insufficient to claim a working prototype |
+| Backward/Forward Gantt Scheduler | Unverified legacy entry | Implementation and deployment evidence not reviewed |
+| Routing effectiveness analytics | Deferred under routing work | Depends on validated classification |
+| Material Allocation Optimization | Deferred | Do not expand before validating current tools |
+| Quality Document Compliance Tracker | Future concept | Ownership and workflow not validated |
+| Resident Compliance / material-status tracking | Deferred legacy concept | Lower priority; no completed result established |
 
-## Supporting tools and prototypes
+Item-master work is consolidated under ERP validation; folder names alone do not prove a completed governance system. Hobby/game projects are excluded from the professional evidence inventory.
 
-| Project | Relationship or purpose | Stage |
-|---|---|---|
-| Quick Price Model | Fast standard material/diameter/length pricing; planned to merge into Price Explorer after performance work | Existing supporting tool |
-| Production Order Allocation Engine | Due-date-first demand consumption across finished inventory and progressively earlier WIP stages | Designed concept |
-| Multi-stage Material Project Tracker | Demand, genealogy, upstream production, assembly, and finished-output tracking in Excel/Power Query | Working prototype |
-| Backward/Forward Gantt Scheduler | Tests shipment, intermediate-output, yield, processing, assembly, and capacity assumptions | Working prototype |
-| ERP Migration Validation | Reporting, process analysis, data validation, and test support during a legacy-to-modern ERP migration | Completed workstream |
-
-## Merged or deferred concepts
-
-| Concept | Disposition | Reason |
-|---|---|---|
-| Rod Disposition & Routing Effectiveness Analytics | Merge into Routing Engine | Requires validated route classification before effectiveness metrics are trustworthy |
-| Material Allocation Optimization Engine | Deferred | Added complexity is not justified until measurable allocation shortages are demonstrated |
-| Quality Document Compliance Tracker | Future project | Workflow and ownership should be validated before automating a recurring document-review process |
-| Resident Compliance / material-status tracking | Deferred | Lower value than the active inventory, routing, and pricing priorities |
-| Standalone standard-pricing expansion | Merge into Price Explorer | Avoid maintaining two overlapping pricing products |
-
-## Portfolio rule
-
-A project earns a full case study when it has a validated business problem, implemented logic or a working prototype, and enough non-confidential evidence to explain the result honestly. Concepts remain in the catalog until they meet that threshold.
+[Portfolio home](../README.md)

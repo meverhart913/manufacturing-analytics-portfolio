@@ -1,25 +1,21 @@
 # Future Supply Requirements Analysis
 
-## Portfolio-safe overview
+**Planning model described in the existing portfolio; implementation unverified.**
 
-This planning project translates chronological demand and available supply into a forward-looking production requirement. It extends inventory visibility into an explainable supply-versus-demand decision.
+## Problem
 
-## Transferable analytical model
+Inventory visibility does not by itself identify future production requirements when eligibility, yield, and demand timing affect usable supply.
 
-1. Order demand by the appropriate planning priority.
-2. Consume eligible finished and in-process supply.
-3. Apply visible, validated yield assumptions.
-4. Identify uncovered demand and potential excess.
-5. Present the result as a recommendation with assumptions, not false precision.
+## Contribution and approach
 
-```mermaid
-flowchart LR
-    A[Demand] --> B[Eligible supply]
-    B --> C[Yield model]
-    C --> D[Uncovered need]
-```
+The existing project description proposes chronological demand, eligible supply consumption, explicit yield assumptions, and uncovered-requirement reporting. The reviewed source set does not establish deployed calculations or measured outcomes.
 
-## Status
+## Domain judgment
 
-In development. The public description excludes material formulas, planning thresholds, inventory records, customer requirements, and internal production rules.
+A yield assumption should remain visible and testable. Applying a single conversion to heterogeneous supply can create false confidence about demand coverage.
 
+## Result
+
+A documented analytical concept. It remains supporting domain-design evidence until implementation and validation can be traced to source artifacts. No supply reduction or forecast accuracy claim is made.
+
+[Portfolio home](../../README.md)

@@ -1,42 +1,32 @@
-# Architecture Patterns
+# Architecture & Decision Controls
 
-Across the portfolio, the same separation of concerns appears repeatedly.
+The examples below separate observed implementation from design principles. They are generalized descriptions, not employer blueprints.
+
+| Pattern | Reviewed evidence | Boundary |
+|---|---|---|
+| Source → transformation → review | Inventory SQL/Power Query preparation and classifications | Final allocation remains a planner decision |
+| Connected and offline use | Price Explorer data coordinator and compressed JSON cache | Snapshot age and Windows stability still matter |
+| Workflow automation | Production calculations and document preparation in Excel/VBA | Original formulas/templates are excluded |
+| Compatibility before similarity | Routing foundation and classification roadmap | Similarity/recommendations remain planned |
+| Capacity scenario comparison | Runnable synthetic Python model | Aggregate load does not establish a feasible schedule |
+
+## A reviewable decision system
 
 ```mermaid
 flowchart TD
-    A[Authoritative systems] --> B[SQL extraction]
-    B --> C[Validation and transformation]
-    C --> D[Decision rules]
-    D --> E[Excel or desktop UI]
-    D --> F[Exports and audit trail]
+    A[Defined source population] --> B[Validation and normalization]
+    B --> C{Evidence sufficient?}
+    C -->|No| D[Visible exception]
+    C -->|Yes| E[Analysis or decision rules]
+    E --> F[Human review]
+    D --> F
+    F --> G[Action and outcome record]
 ```
 
-## 1. Source-first performance
+This diagram is a generalized design principle. It is not a statement that every project has implemented an outcome-recording loop.
 
-Large filters and aggregations belong close to the database when possible. In one pricing workflow, this changed the user experience from a minutes-long refresh to an interactive response measured in seconds.
+## Implementation corrections
 
-## 2. Explicit decision layers
+The inspected Price Explorer cache uses compressed JSON, not SQLite. The previous minutes-to-seconds performance assertion lacked a reviewed benchmark and is removed. Query optimization is a development approach; measured speed improvement needs a repeatable before/after test.
 
-Source fields are not the same thing as business decisions. Each tool separates:
-
-- raw source values;
-- normalized units and categories;
-- eligibility rules;
-- ranking or allocation rules;
-- warnings and overrides;
-- user-facing output.
-
-## 3. Offline distribution
-
-When some users cannot reach the source database, a centrally generated SQLite snapshot can provide the same query model to connected and offline users:
-
-```mermaid
-flowchart LR
-    A[SQL Server] --> B[Snapshot builder]
-    B --> C[Versioned SQLite]
-    C --> D[WPF application]
-```
-
-## 4. Validation against outcomes
-
-Calculated yield or eligibility is compared with actual production results. Results are classified as exact, conservative, or overstated. Missing measurements remain potential candidates for review rather than becoming false failures.
+[Portfolio home](../README.md)

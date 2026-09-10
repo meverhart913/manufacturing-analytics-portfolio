@@ -1,37 +1,23 @@
-# Automated Excel Report Factory
+# Automated Excel Report Factory & Reusable Utilities
+
+**Report factory in progress; supporting technical pattern.**
 
 ## Problem
 
-Many manufacturing reports repeat the same fragile workflow: export data, paste into a workbook, repair formulas, refresh pivots, rename the file, and distribute it. Every manual touch creates delay and inconsistency.
+Recurring spreadsheet reports require repeated cleaning, summarization, formatting, and exception handling.
 
-## Pattern
+## Contribution and approach
 
-The report factory separates reusable responsibilities:
+The standalone project documents a Python workflow using pandas and openpyxl to produce summary, cleaned-data, exception, and chart sheets. The source README labels this workflow planned and the project in progress; it does not establish a deployed business system.
 
-```mermaid
-flowchart LR
-    A[SQL query] --> B[Typed dataset]
-    B --> C[Business rules]
-    C --> D[Excel template]
-    D --> E[Validation]
-    E --> F[Versioned output]
-```
+Reusable Excel/VBA work separately addresses workbook and file-handling reliability. One documented issue involves counting files in an accessible network folder without opening them, with explicit error reporting and late binding. Operational validation of that utility remains pending in its context record.
 
-## Controls
+## Domain judgment
 
-- Parameterized queries instead of copied SQL strings
-- Stable table and column contracts
-- Refresh timestamps and row-count checks
-- Named output ranges instead of hard-coded cell coordinates where practical
-- Clear error messages for missing source fields
-- Deterministic filenames and archive locations
-- Detail tabs retained for auditability
+An output file being created does not establish trustworthy reporting. Missing inputs, stale data, inaccessible folders, and unreported exceptions must be visible to the person relying on the report.
 
-## Technologies
+## Result and competencies
 
-SQL Server, Python, Excel 365, Power Query, VBA, and template-driven reporting.
+Supporting evidence of automation design and troubleshooting. No completed report-factory deployment, adoption, time saving, or reporting error reduction is claimed. The [production document case study](../bonded-rod-automation/README.md) provides the stronger implemented automation evidence.
 
-## Why it matters
-
-The pattern converts one-off analyst effort into a repeatable reporting product and reduces the amount of spreadsheet repair needed after source-system changes.
-
+[Portfolio home](../../README.md)
