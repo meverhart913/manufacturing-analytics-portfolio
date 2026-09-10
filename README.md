@@ -1,70 +1,96 @@
-# Manufacturing Analytics Portfolio
+# Michael Everhart — Manufacturing & Operations Analytics Portfolio
 
-Manufacturing analytics, decision-support, and process-improvement work by **Michael Everhart**.
+I solve manufacturing and operations problems at the point where **shop-floor reality, ERP data, planning decisions, Lean methods, and analytics** meet.
 
-I build practical tools that connect production data to daily decisions: what to make, what material can be used, where capacity is constrained, how a part should be routed, and what historical pricing supports a quote.
+My background spans more than 25 years of progressive experience across frontline operations, logistics leadership, hands-on manufacturing, Lean/continuous improvement, supply-chain planning, ERP/SAP, production control, automation, and business analytics. I pair that operating experience with a B.S. in Mathematics and an M.S. in Business Analytics.
 
-## Focus areas
+This is not a collection of disconnected coding exercises. It is an evidence portfolio showing how I frame operational problems, identify the governing constraints, use data and technology to make the decision repeatable, and carry the solution into the working process.
 
-- Production planning and capacity analysis
-- Inventory, WIP, and material-allocation decision support
-- SQL-backed reporting and analytics applications
-- Excel, Power Query, and VBA automation
-- C#/.NET desktop application development
-- Manufacturing process improvement and ERP validation
+## What I bring
 
-## Featured projects
+- **Manufacturing depth:** receiving, inventory control, production, material flow, quality, routings, capacity, WIP, and production planning
+- **Supply-chain judgment:** purchasing, material planning, supplier development, shortage response, inventory strategy, and production continuity
+- **Lean / continuous improvement:** Six Sigma, Kaizen facilitation, layout and flow improvement, waste reduction, root-cause analysis, and quantified business cases
+- **Analytics:** SQL Server, Excel, Power Query, VBA, Python, Tableau, R, quantitative analysis, and scenario modeling
+- **ERP / business systems:** SAP, SAP Business One, ERP validation, master-data/process analysis, and operational reporting
+- **Decision-support development:** Excel/VBA workflows, SQL-backed analytics, C#/.NET desktop applications, auditable exports, and human-in-the-loop recommendation tools
 
-| Project | Business problem | Stack | Status |
-|---|---|---|---|
-| [Geometry Nesting Application](projects/corenest/README.md) | Convert measured raw-material geometry into manufacturable layouts | C#, .NET 8, WPF, computational geometry, DXF | Active development |
-| [Manufacturing Price Explorer](projects/price-explorer/README.md) | Give Sales and Quoting fast access to comparable historical transactions | C#, WPF, SQL Server, SQLite, Excel export | Active development |
-| [Specialty Material Inventory Decision Support](projects/cr4-inventory/README.md) | Match demand to finished inventory, recoverable material, and raw stock | SQL Server, Excel 365, Power Query, VBA | Working tool |
-| [Routing Recommendation Engine](projects/routing-engine/README.md) | Find relevant historical manufacturing routes across thousands of parts | SQL Server, SAP Business One data, analytics | Working prototype |
-| [Backlog & Capacity Planner](projects/capacity-planner/README.md) | Test regular-time and overtime capacity against an eight-week backlog | Python, Excel, scenario modeling | Portfolio demo included |
-| [Bonded Rod Removal Automation](projects/bonded-rod-automation/README.md) | Replace multi-source preparation and manual document generation | Excel, VBA, SQL/Power Query | Deployed workflow |
-| [Automated Excel Report Factory](projects/report-factory/README.md) | Turn repeatable data pulls into consistent refreshable reports | SQL, Python, Excel, Power Query, VBA | Reusable pattern |
-| [Growth Requirements Analysis](projects/growth-requirements/README.md) | Translate demand, yield, and on-hand supply into future material needs | SQL, Excel, production planning | In development |
-| [Selected Process Improvements](projects/process-improvement/README.md) | Reduce cost, travel, cycle time, defects, and supply risk | Lean Six Sigma, Excel, SQL | Completed work |
+## Featured evidence
 
-The [complete project catalog](docs/project-catalog.md) also records supporting tools, merged ideas, scheduling prototypes, and deferred concepts without overstating their maturity.
+### 1. [Manufacturing Process Improvement](projects/process-improvement/README.md)
+**Completed work — Lean, Six Sigma, flow, quality, capacity, and cost.**
 
-## Demonstration code
+A portfolio of implemented manufacturing improvements including defect reduction, heat-treatment utilization, point-of-use staging, layout/flow work, and recurring Kaizen facilitation. These projects demonstrate that my analytics work is grounded in actual process behavior and implementation, not just reporting.
 
-The [`demo/capacity_planner`](demo/capacity_planner/README.md) folder contains a runnable, dependency-free Python example using fictional orders and work centers. It calculates required hours by week, compares three capacity scenarios, and flags overloads and late work.
+### 2. [Specialty Material Inventory Decision Support](projects/cr4-inventory/README.md)
+**Working tool — SQL Server, Excel 365, Power Query, VBA.**
 
-```bash
-cd demo/capacity_planner
-python -m unittest discover -s tests -v
-python src/capacity_planner.py \
-  --orders data/orders.csv \
-  --capacity data/capacity.csv \
-  --output output/capacity_summary.csv
-```
+Consolidates fragmented inventory sources, applies governed eligibility logic, distinguishes usable from review-required material, and gives planners ranked candidates instead of requiring repeated manual searches.
 
-## Selected results
+### 3. [Production Document Automation](projects/bonded-rod-automation/README.md)
+**Deployed workflow — Excel, VBA, SQL/Power Query patterns.**
 
-- Reworked a SQL-backed pricing workflow so interactive research completed in seconds instead of minutes.
-- Built and production-validated a material-matching workflow whose recommended candidates met the required tolerance in the documented test.
-- Automated a multi-source production-document workflow, reducing preparation time and common lookup, calculation, and archive errors.
-- Led cost-justified improvements in defect reduction, equipment loading, point-of-use staging, supplier performance, and production flow.
+Collapsed a repetitive multi-source production-document process into a controlled workflow that performs lookups, calculations, sorting, document generation, and archiving consistently.
+
+### 4. [Manufacturing Price Explorer](projects/price-explorer/README.md)
+**Active development — C#, .NET 8, WPF, SQL-backed analytics, local/offline data path.**
+
+A desktop decision-support application for authorized historical-comparable research. The portfolio version focuses on architecture, statistical summarization, performance, deployment, and auditability and contains no real customer, part, or price data.
+
+### 5. [Supply-Chain Resilience & Supplier Development](projects/supply-chain-resilience/README.md)
+**Completed historical work — planning, sourcing, supplier qualification, inventory strategy, cross-functional execution.**
+
+Two examples of operational supply-chain leadership: removing a recurring externally addressable production constraint through supplier development, and maintaining production continuity during severe global component shortages.
+
+## Additional technical and domain evidence
+
+| Project | What it proves | Maturity |
+|---|---|---|
+| [Manufacturing Routing Recommendation Engine](projects/routing-engine/README.md) | SQL/data-model foundation, manufacturing classification, explainable recommendation design | Data foundation complete; recommendation engine in development |
+| [Backlog & Capacity Planner](projects/capacity-planner/README.md) | Production-capacity reasoning, scenario modeling, Python | Working portfolio model with synthetic demo |
+| [Geometry Nesting Application](projects/corenest/README.md) | C#/.NET, computational geometry, validation-first manufacturing software | Pre-release development |
+| [Automated Excel Report Factory](projects/report-factory/README.md) | Python-to-Excel reporting pattern | In development / demonstration |
+| [Growth Requirements Analysis](projects/growth-requirements/README.md) | Demand, yield, supply, and forward material requirements | In development |
+| ERP migration / validation | Process mapping, operational data validation, business-system transition support | Completed workstream; summarized in the [project catalog](docs/project-catalog.md) |
+
+The [complete project catalog](docs/project-catalog.md) distinguishes completed work, working tools, prototypes, active development, and backlog concepts so unfinished ideas are not presented as deployed accomplishments.
+
+## Evidence system
+
+- [Skills & evidence matrix](docs/evidence-matrix.md) — where each senior-role competency is demonstrated
+- [Complete project catalog](docs/project-catalog.md) — portfolio inventory and maturity
+- [Resume bullet library](docs/resume-bullet-library.md) — defensible accomplishment language
+- [STAR story library](docs/star-story-library.md) — interview source material
+- [Architecture patterns](docs/architecture-patterns.md) — recurring solution-design principles
+- [Data and confidentiality](docs/data-and-confidentiality.md) — public-data and IP firewall
+
+## Current technical milestone
+
+The Manufacturing Price Explorer remains the first active technical project to stabilize before another major build displaces it. The current release-blocking path is repeated customer-oriented research followed by chart navigation. The project is not described here as production-stable until repeated search-to-chart regression testing passes without freezes or crashes.
+
+## Education
+
+**M.S., Business Analytics — University of North Carolina Wilmington, 2024**  
+GPA: 3.9
+
+**B.S., Mathematics — Indiana University, 2020**  
+GPA: 4.0
 
 ## Technical toolkit
 
-`SQL Server` · `SAP Business One` · `Excel 365` · `Power Query` · `VBA` · `Python` · `C#` · `.NET 8` · `WPF` · `Tableau` · `R`
+`SQL Server` · `SAP` · `SAP Business One` · `Excel 365` · `Power Query` · `VBA` · `Python` · `C#` · `.NET 8` · `WPF` · `Tableau` · `R`
 
-## How I work
+## Operating philosophy
 
-1. Define the production decision, not just the report.
-2. Identify the authoritative data and expose missing assumptions.
-3. Encode business rules so results are reproducible.
-4. Validate recommendations against real outcomes.
-5. Keep operators and analysts in control through warnings, overrides, and traceable outputs.
+1. Define the **decision or constraint**, not merely the report.
+2. Identify authoritative data, missing assumptions, and operational exceptions.
+3. Encode rules so the analysis is repeatable and auditable.
+4. Keep domain experts in control when the decision should remain human-reviewed.
+5. Validate recommendations against actual outcomes before increasing automation.
+6. Measure whether the process changed—not whether the dashboard looks finished.
 
-## Confidentiality
+## Confidentiality and IP
 
-This public repository uses generalized descriptions, fictional sample data, independently written demonstration code, and deliberately non-specific outcomes. It does not contain employer source code, customer or order information, internal credentials, server names, proprietary drawings, pricing, controlled technical data, or exact internal performance figures. See [Data and confidentiality](docs/data-and-confidentiality.md).
+This public repository is intentionally a **sanitized evidence portfolio**, not a mirror of an employer environment. It contains generalized descriptions, independently written demonstrations, fictional data, and high-level architecture. It excludes employer-owned source code, production datasets, customer or supplier identifiers, actual prices, internal infrastructure, proprietary specifications, drawings, routings, process parameters, controlled technical information, and sensitive operational figures.
 
-## About
-
-Michael Everhart is a manufacturing and production-control analyst with a B.S. in Mathematics and an M.S. in Business Analytics. His background spans production planning, supply chain, continuous improvement, pricing analysis, ERP migration support, and hands-on manufacturing.
+Where a real project cannot safely be reproduced, the portfolio demonstrates the transferable problem framing, method, architecture, decision logic, implementation approach, and verified outcome instead. See [Data and confidentiality](docs/data-and-confidentiality.md).
